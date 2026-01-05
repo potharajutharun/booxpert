@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Sidebar from "../../components/Sidebar";
 import SummaryCards from "../../components/SummaryCards";
 import EmployeeTable from "../../components/EmployeeTable";
-// import { mockEmployees } from "../../mockdata/mockEmployees";
+import { mockEmployees } from "../../mockdata/mockEmployees";
 
 export default function Dashboard() {
   const router = useRouter();
