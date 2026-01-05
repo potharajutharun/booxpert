@@ -1,0 +1,59 @@
+/* LEFT IMAGE CONTAINER */
+.login-image {
+  position: relative;
+  width: 80%;
+  height: 100vh; /* full height */
+  overflow: hidden;
+  margin-left: 3rem;
+}
+
+/* IMAGE OVERLAY */
+.login-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.75)
+  );
+  z-index: 1;
+}
+
+
+/* LOGIN CARD */
+.login-card {
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  animation: slideIn 0.6s ease-out;
+}
+
+/* INPUT & BUTTON */
+.login-input {
+  height: 46px;
+  border-radius: 10px;
+}
+
+.login-btn {
+  height: 46px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* ANIMATION */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .login-image {
+    display: none;
+  }
+}
